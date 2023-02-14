@@ -1,0 +1,293 @@
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccwcWebt.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"main.cpp"
+  16              		.text
+  17              		.align	1
+  18              		.global	Error_Handler
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  23              	Error_Handler:
+  24              		.fnstart
+  25              	.LFB144:
+  26              		@ Volatile: function does not return.
+  27              		@ args = 0, pretend = 0, frame = 0
+  28              		@ frame_needed = 0, uses_anonymous_args = 0
+  29              		@ link register save eliminated.
+  30              		.syntax unified
+  31              	@ 142 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+  32 0000 72B6     		cpsid i
+  33              	@ 0 "" 2
+  34              		.thumb
+  35              		.syntax unified
+  36              	.L2:
+  37 0002 FEE7     		b	.L2
+  38              		.cantunwind
+  39              		.fnend
+  41              		.align	1
+  42              		.global	_Z18SystemClock_Configv
+  43              		.syntax unified
+  44              		.thumb
+  45              		.thumb_func
+  47              	_Z18SystemClock_Configv:
+  48              		.fnstart
+  49              	.LFB143:
+  50              		@ args = 0, pretend = 0, frame = 80
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52 0004 00B5     		push	{lr}
+  53              		.save {lr}
+  54              		.pad #84
+  55 0006 95B0     		sub	sp, sp, #84
+  56 0008 3022     		movs	r2, #48
+  57 000a 0021     		movs	r1, #0
+  58 000c 08A8     		add	r0, sp, #32
+  59 000e FFF7FEFF 		bl	memset
+  60 0012 0023     		movs	r3, #0
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccwcWebt.s 			page 2
+
+
+  61 0014 0393     		str	r3, [sp, #12]
+  62 0016 0493     		str	r3, [sp, #16]
+  63 0018 0593     		str	r3, [sp, #20]
+  64 001a 0693     		str	r3, [sp, #24]
+  65 001c 0793     		str	r3, [sp, #28]
+  66 001e 0193     		str	r3, [sp, #4]
+  67 0020 1E4A     		ldr	r2, .L9
+  68 0022 116C     		ldr	r1, [r2, #64]
+  69 0024 41F08051 		orr	r1, r1, #268435456
+  70 0028 1164     		str	r1, [r2, #64]
+  71 002a 126C     		ldr	r2, [r2, #64]
+  72 002c 02F08052 		and	r2, r2, #268435456
+  73 0030 0192     		str	r2, [sp, #4]
+  74 0032 019A     		ldr	r2, [sp, #4]
+  75 0034 0293     		str	r3, [sp, #8]
+  76 0036 1A4A     		ldr	r2, .L9+4
+  77 0038 1168     		ldr	r1, [r2]
+  78 003a 41F44041 		orr	r1, r1, #49152
+  79 003e 1160     		str	r1, [r2]
+  80 0040 1268     		ldr	r2, [r2]
+  81 0042 02F44042 		and	r2, r2, #49152
+  82 0046 0292     		str	r2, [sp, #8]
+  83 0048 029A     		ldr	r2, [sp, #8]
+  84 004a 0222     		movs	r2, #2
+  85 004c 0892     		str	r2, [sp, #32]
+  86 004e 0121     		movs	r1, #1
+  87 0050 0B91     		str	r1, [sp, #44]
+  88 0052 1021     		movs	r1, #16
+  89 0054 0C91     		str	r1, [sp, #48]
+  90 0056 0E92     		str	r2, [sp, #56]
+  91 0058 0F93     		str	r3, [sp, #60]
+  92 005a 0823     		movs	r3, #8
+  93 005c 1093     		str	r3, [sp, #64]
+  94 005e 6423     		movs	r3, #100
+  95 0060 1193     		str	r3, [sp, #68]
+  96 0062 1292     		str	r2, [sp, #72]
+  97 0064 0423     		movs	r3, #4
+  98 0066 1393     		str	r3, [sp, #76]
+  99 0068 08A8     		add	r0, sp, #32
+ 100 006a FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 101 006e 88B9     		cbnz	r0, .L7
+ 102 0070 0F23     		movs	r3, #15
+ 103 0072 0393     		str	r3, [sp, #12]
+ 104 0074 0223     		movs	r3, #2
+ 105 0076 0493     		str	r3, [sp, #16]
+ 106 0078 0023     		movs	r3, #0
+ 107 007a 0593     		str	r3, [sp, #20]
+ 108 007c 4FF48052 		mov	r2, #4096
+ 109 0080 0692     		str	r2, [sp, #24]
+ 110 0082 0793     		str	r3, [sp, #28]
+ 111 0084 0321     		movs	r1, #3
+ 112 0086 03A8     		add	r0, sp, #12
+ 113 0088 FFF7FEFF 		bl	HAL_RCC_ClockConfig
+ 114 008c 20B9     		cbnz	r0, .L8
+ 115 008e 15B0     		add	sp, sp, #84
+ 116              		@ sp needed
+ 117 0090 5DF804FB 		ldr	pc, [sp], #4
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccwcWebt.s 			page 3
+
+
+ 118              	.L7:
+ 119 0094 FFF7FEFF 		bl	Error_Handler
+ 120              	.L8:
+ 121 0098 FFF7FEFF 		bl	Error_Handler
+ 122              	.L10:
+ 123              		.align	2
+ 124              	.L9:
+ 125 009c 00380240 		.word	1073887232
+ 126 00a0 00700040 		.word	1073770496
+ 127              		.fnend
+ 129              		.align	1
+ 130              		.global	main
+ 131              		.syntax unified
+ 132              		.thumb
+ 133              		.thumb_func
+ 135              	main:
+ 136              		.fnstart
+ 137              	.LFB142:
+ 138              		@ args = 0, pretend = 0, frame = 56
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140 00a4 10B5     		push	{r4, lr}
+ 141              		.save {r4, lr}
+ 142              		.pad #56
+ 143 00a6 8EB0     		sub	sp, sp, #56
+ 144              	.LEHB0:
+ 145 00a8 FFF7FEFF 		bl	HAL_Init
+ 146 00ac FFF7FEFF 		bl	_Z18SystemClock_Configv
+ 147 00b0 0123     		movs	r3, #1
+ 148 00b2 0D93     		str	r3, [sp, #52]
+ 149 00b4 1F4C     		ldr	r4, .L23
+ 150 00b6 0023     		movs	r3, #0
+ 151 00b8 4FF48052 		mov	r2, #4096
+ 152 00bc 2146     		mov	r1, r4
+ 153 00be 09A8     		add	r0, sp, #36
+ 154 00c0 FFF7FEFF 		bl	_ZN9MyDrivers3GpoC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 155              	.LEHE0:
+ 156 00c4 0023     		movs	r3, #0
+ 157 00c6 4FF48052 		mov	r2, #4096
+ 158 00ca 2146     		mov	r1, r4
+ 159 00cc 05A8     		add	r0, sp, #20
+ 160              	.LEHB1:
+ 161 00ce FFF7FEFF 		bl	_ZN9MyDrivers3GpoC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 162              	.LEHE1:
+ 163 00d2 0023     		movs	r3, #0
+ 164 00d4 0122     		movs	r2, #1
+ 165 00d6 1849     		ldr	r1, .L23+4
+ 166 00d8 01A8     		add	r0, sp, #4
+ 167              	.LEHB2:
+ 168 00da FFF7FEFF 		bl	_ZN9MyDrivers3GpiC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 169              	.LEHE2:
+ 170 00de 0121     		movs	r1, #1
+ 171 00e0 05A8     		add	r0, sp, #20
+ 172              	.LEHB3:
+ 173 00e2 FFF7FEFF 		bl	_ZN9MyDrivers3GpolsENS_9GpioStateE
+ 174              	.L12:
+ 175 00e6 0DA9     		add	r1, sp, #52
+ 176 00e8 01A8     		add	r0, sp, #4
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccwcWebt.s 			page 4
+
+
+ 177 00ea FFF7FEFF 		bl	_ZN9MyDrivers3GpirsERNS_9GpioStateE
+ 178 00ee 0D9B     		ldr	r3, [sp, #52]
+ 179 00f0 012B     		cmp	r3, #1
+ 180 00f2 04D0     		beq	.L22
+ 181 00f4 0021     		movs	r1, #0
+ 182 00f6 09A8     		add	r0, sp, #36
+ 183 00f8 FFF7FEFF 		bl	_ZN9MyDrivers3GpolsENS_9GpioStateE
+ 184 00fc F3E7     		b	.L12
+ 185              	.L22:
+ 186 00fe 4FF42F70 		mov	r0, #700
+ 187 0102 FFF7FEFF 		bl	HAL_Delay
+ 188 0106 0121     		movs	r1, #1
+ 189 0108 09A8     		add	r0, sp, #36
+ 190 010a FFF7FEFF 		bl	_ZN9MyDrivers3GpolsENS_9GpioStateE
+ 191 010e 8220     		movs	r0, #130
+ 192 0110 FFF7FEFF 		bl	HAL_Delay
+ 193 0114 0021     		movs	r1, #0
+ 194 0116 09A8     		add	r0, sp, #36
+ 195 0118 FFF7FEFF 		bl	_ZN9MyDrivers3GpolsENS_9GpioStateE
+ 196              	.LEHE3:
+ 197 011c E3E7     		b	.L12
+ 198              	.L20:
+ 199 011e 074B     		ldr	r3, .L23+8
+ 200 0120 0193     		str	r3, [sp, #4]
+ 201              	.L16:
+ 202 0122 074B     		ldr	r3, .L23+12
+ 203 0124 0593     		str	r3, [sp, #20]
+ 204              	.L17:
+ 205 0126 064B     		ldr	r3, .L23+12
+ 206 0128 0993     		str	r3, [sp, #36]
+ 207              	.LEHB4:
+ 208 012a FFF7FEFF 		bl	__cxa_end_cleanup
+ 209              	.LEHE4:
+ 210              	.L19:
+ 211 012e F8E7     		b	.L16
+ 212              	.L18:
+ 213 0130 F9E7     		b	.L17
+ 214              	.L24:
+ 215 0132 00BF     		.align	2
+ 216              	.L23:
+ 217 0134 000C0240 		.word	1073875968
+ 218 0138 00000240 		.word	1073872896
+ 219 013c 08000000 		.word	_ZTVN9MyDrivers3GpiE+8
+ 220 0140 08000000 		.word	_ZTVN9MyDrivers3GpoE+8
+ 221              		.global	__gxx_personality_v0
+ 222              		.personality	__gxx_personality_v0
+ 223              		.handlerdata
+ 224              	.LLSDA142:
+ 225 0008 FF       		.byte	0xff
+ 226 0009 FF       		.byte	0xff
+ 227 000a 01       		.byte	0x1
+ 228 000b 17       		.uleb128 .LLSDACSE142-.LLSDACSB142
+ 229              	.LLSDACSB142:
+ 230 000c 04       		.uleb128 .LEHB0-.LFB142
+ 231 000d 1C       		.uleb128 .LEHE0-.LEHB0
+ 232 000e 00       		.uleb128 0
+ 233 000f 00       		.uleb128 0
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccwcWebt.s 			page 5
+
+
+ 234 0010 2A       		.uleb128 .LEHB1-.LFB142
+ 235 0011 04       		.uleb128 .LEHE1-.LEHB1
+ 236 0012 8C01     		.uleb128 .L18-.LFB142
+ 237 0014 00       		.uleb128 0
+ 238 0015 36       		.uleb128 .LEHB2-.LFB142
+ 239 0016 04       		.uleb128 .LEHE2-.LEHB2
+ 240 0017 8A01     		.uleb128 .L19-.LFB142
+ 241 0019 00       		.uleb128 0
+ 242 001a 3E       		.uleb128 .LEHB3-.LFB142
+ 243 001b 3A       		.uleb128 .LEHE3-.LEHB3
+ 244 001c 7A       		.uleb128 .L20-.LFB142
+ 245 001d 00       		.uleb128 0
+ 246 001e 8601     		.uleb128 .LEHB4-.LFB142
+ 247 0020 04       		.uleb128 .LEHE4-.LEHB4
+ 248 0021 00       		.uleb128 0
+ 249 0022 00       		.uleb128 0
+ 250              	.LLSDACSE142:
+ 251              		.text
+ 252              		.fnend
+ 254              		.ident	"GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccwcWebt.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.cpp
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:17     .text:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:23     .text:00000000 Error_Handler
+                       .ARM.exidx:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:47     .text:00000004 _Z18SystemClock_Configv
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:125    .text:0000009c $d
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:129    .text:000000a4 $t
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:135    .text:000000a4 main
+C:\Users\parad\AppData\Local\Temp\ccwcWebt.s:217    .text:00000134 $d
+                       .ARM.extab:00000000 $d
+
+UNDEFINED SYMBOLS
+memset
+HAL_RCC_OscConfig
+HAL_RCC_ClockConfig
+__aeabi_unwind_cpp_pr0
+HAL_Init
+_ZN9MyDrivers3GpoC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+_ZN9MyDrivers3GpiC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+_ZN9MyDrivers3GpolsENS_9GpioStateE
+_ZN9MyDrivers3GpirsERNS_9GpioStateE
+HAL_Delay
+__cxa_end_cleanup
+_ZTVN9MyDrivers3GpiE
+_ZTVN9MyDrivers3GpoE
+__gxx_personality_v0

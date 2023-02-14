@@ -1,0 +1,1054 @@
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"MyGpio.cpp"
+  16              		.text
+  17              		.section	.text._ZN9MyDrivers3GpiD2Ev,"axG",%progbits,_ZN9MyDrivers3GpiD5Ev,comdat
+  18              		.align	1
+  19              		.weak	_ZN9MyDrivers3GpiD2Ev
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	_ZN9MyDrivers3GpiD2Ev:
+  25              		.fnstart
+  26              	.LFB131:
+  27              		@ args = 0, pretend = 0, frame = 0
+  28              		@ frame_needed = 0, uses_anonymous_args = 0
+  29              		@ link register save eliminated.
+  30 0000 014B     		ldr	r3, .L2
+  31 0002 0360     		str	r3, [r0]
+  32 0004 7047     		bx	lr
+  33              	.L3:
+  34 0006 00BF     		.align	2
+  35              	.L2:
+  36 0008 08000000 		.word	.LANCHOR0+8
+  37              		.cantunwind
+  38              		.fnend
+  40              		.weak	_ZN9MyDrivers3GpiD1Ev
+  41              		.thumb_set _ZN9MyDrivers3GpiD1Ev,_ZN9MyDrivers3GpiD2Ev
+  42              		.section	.text._ZN9MyDrivers3GpoD2Ev,"axG",%progbits,_ZN9MyDrivers3GpoD5Ev,comdat
+  43              		.align	1
+  44              		.weak	_ZN9MyDrivers3GpoD2Ev
+  45              		.syntax unified
+  46              		.thumb
+  47              		.thumb_func
+  49              	_ZN9MyDrivers3GpoD2Ev:
+  50              		.fnstart
+  51              	.LFB135:
+  52              		@ args = 0, pretend = 0, frame = 0
+  53              		@ frame_needed = 0, uses_anonymous_args = 0
+  54              		@ link register save eliminated.
+  55 0000 014B     		ldr	r3, .L5
+  56 0002 0360     		str	r3, [r0]
+  57 0004 7047     		bx	lr
+  58              	.L6:
+  59 0006 00BF     		.align	2
+  60              	.L5:
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 2
+
+
+  61 0008 1C000000 		.word	.LANCHOR0+28
+  62              		.cantunwind
+  63              		.fnend
+  65              		.weak	_ZN9MyDrivers3GpoD1Ev
+  66              		.thumb_set _ZN9MyDrivers3GpoD1Ev,_ZN9MyDrivers3GpoD2Ev
+  67              		.section	.text._ZN9MyDrivers4GpioD2Ev,"axG",%progbits,_ZN9MyDrivers4GpioD5Ev,comdat
+  68              		.align	1
+  69              		.weak	_ZN9MyDrivers4GpioD2Ev
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  74              	_ZN9MyDrivers4GpioD2Ev:
+  75              		.fnstart
+  76              	.LFB139:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80 0000 014B     		ldr	r3, .L8
+  81 0002 0360     		str	r3, [r0]
+  82 0004 7047     		bx	lr
+  83              	.L9:
+  84 0006 00BF     		.align	2
+  85              	.L8:
+  86 0008 08000000 		.word	_ZTVN9MyDrivers4GpioE+8
+  87              		.cantunwind
+  88              		.fnend
+  90              		.weak	_ZN9MyDrivers4GpioD1Ev
+  91              		.thumb_set _ZN9MyDrivers4GpioD1Ev,_ZN9MyDrivers4GpioD2Ev
+  92              		.section	.text._ZN9MyDrivers4GpioD0Ev,"axG",%progbits,_ZN9MyDrivers4GpioD5Ev,comdat
+  93              		.align	1
+  94              		.weak	_ZN9MyDrivers4GpioD0Ev
+  95              		.syntax unified
+  96              		.thumb
+  97              		.thumb_func
+  99              	_ZN9MyDrivers4GpioD0Ev:
+ 100              		.fnstart
+ 101              	.LFB141:
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104 0000 10B5     		push	{r4, lr}
+ 105 0002 0446     		mov	r4, r0
+ 106 0004 034B     		ldr	r3, .L12
+ 107 0006 0360     		str	r3, [r0]
+ 108 0008 1821     		movs	r1, #24
+ 109 000a FFF7FEFF 		bl	_ZdlPvj
+ 110 000e 2046     		mov	r0, r4
+ 111 0010 10BD     		pop	{r4, pc}
+ 112              	.L13:
+ 113 0012 00BF     		.align	2
+ 114              	.L12:
+ 115 0014 08000000 		.word	_ZTVN9MyDrivers4GpioE+8
+ 116              		.cantunwind
+ 117              		.fnend
+ 119              		.section	.text._ZN9MyDrivers3GpoD0Ev,"axG",%progbits,_ZN9MyDrivers3GpoD5Ev,comdat
+ 120              		.align	1
+ 121              		.weak	_ZN9MyDrivers3GpoD0Ev
+ 122              		.syntax unified
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 3
+
+
+ 123              		.thumb
+ 124              		.thumb_func
+ 126              	_ZN9MyDrivers3GpoD0Ev:
+ 127              		.fnstart
+ 128              	.LFB137:
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131 0000 10B5     		push	{r4, lr}
+ 132 0002 0446     		mov	r4, r0
+ 133 0004 034B     		ldr	r3, .L16
+ 134 0006 0360     		str	r3, [r0]
+ 135 0008 1021     		movs	r1, #16
+ 136 000a FFF7FEFF 		bl	_ZdlPvj
+ 137 000e 2046     		mov	r0, r4
+ 138 0010 10BD     		pop	{r4, pc}
+ 139              	.L17:
+ 140 0012 00BF     		.align	2
+ 141              	.L16:
+ 142 0014 1C000000 		.word	.LANCHOR0+28
+ 143              		.cantunwind
+ 144              		.fnend
+ 146              		.section	.text._ZN9MyDrivers3GpiD0Ev,"axG",%progbits,_ZN9MyDrivers3GpiD5Ev,comdat
+ 147              		.align	1
+ 148              		.weak	_ZN9MyDrivers3GpiD0Ev
+ 149              		.syntax unified
+ 150              		.thumb
+ 151              		.thumb_func
+ 153              	_ZN9MyDrivers3GpiD0Ev:
+ 154              		.fnstart
+ 155              	.LFB133:
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158 0000 10B5     		push	{r4, lr}
+ 159 0002 0446     		mov	r4, r0
+ 160 0004 034B     		ldr	r3, .L20
+ 161 0006 0360     		str	r3, [r0]
+ 162 0008 1021     		movs	r1, #16
+ 163 000a FFF7FEFF 		bl	_ZdlPvj
+ 164 000e 2046     		mov	r0, r4
+ 165 0010 10BD     		pop	{r4, pc}
+ 166              	.L21:
+ 167 0012 00BF     		.align	2
+ 168              	.L20:
+ 169 0014 08000000 		.word	.LANCHOR0+8
+ 170              		.cantunwind
+ 171              		.fnend
+ 173              		.text
+ 174              		.align	1
+ 175              		.global	_ZN9MyDrivers8GpioBaseC2ENS_8GpioPortENS_7GpioPinE
+ 176              		.syntax unified
+ 177              		.thumb
+ 178              		.thumb_func
+ 180              	_ZN9MyDrivers8GpioBaseC2ENS_8GpioPortENS_7GpioPinE:
+ 181              		.fnstart
+ 182              	.LFB143:
+ 183              		@ args = 0, pretend = 0, frame = 24
+ 184              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 4
+
+
+ 185              		@ link register save eliminated.
+ 186 0000 86B0     		sub	sp, sp, #24
+ 187 0002 0260     		str	r2, [r0]
+ 188 0004 4160     		str	r1, [r0, #4]
+ 189 0006 354B     		ldr	r3, .L32
+ 190 0008 9942     		cmp	r1, r3
+ 191 000a 49D0     		beq	.L23
+ 192 000c 15DD     		ble	.L31
+ 193 000e 344B     		ldr	r3, .L32+4
+ 194 0010 9942     		cmp	r1, r3
+ 195 0012 54D0     		beq	.L28
+ 196 0014 03F58063 		add	r3, r3, #1024
+ 197 0018 9942     		cmp	r1, r3
+ 198 001a 33D1     		bne	.L27
+ 199 001c 314B     		ldr	r3, .L32+8
+ 200 001e 8360     		str	r3, [r0, #8]
+ 201 0020 0023     		movs	r3, #0
+ 202 0022 0493     		str	r3, [sp, #16]
+ 203 0024 304B     		ldr	r3, .L32+12
+ 204 0026 1A6B     		ldr	r2, [r3, #48]
+ 205 0028 42F01002 		orr	r2, r2, #16
+ 206 002c 1A63     		str	r2, [r3, #48]
+ 207 002e 1B6B     		ldr	r3, [r3, #48]
+ 208 0030 03F01003 		and	r3, r3, #16
+ 209 0034 0493     		str	r3, [sp, #16]
+ 210 0036 049B     		ldr	r3, [sp, #16]
+ 211 0038 24E0     		b	.L27
+ 212              	.L31:
+ 213 003a A3F50063 		sub	r3, r3, #2048
+ 214 003e 9942     		cmp	r1, r3
+ 215 0040 12D0     		beq	.L25
+ 216 0042 03F58063 		add	r3, r3, #1024
+ 217 0046 9942     		cmp	r1, r3
+ 218 0048 1CD1     		bne	.L27
+ 219 004a 284B     		ldr	r3, .L32+16
+ 220 004c 8360     		str	r3, [r0, #8]
+ 221 004e 0023     		movs	r3, #0
+ 222 0050 0193     		str	r3, [sp, #4]
+ 223 0052 254B     		ldr	r3, .L32+12
+ 224 0054 1A6B     		ldr	r2, [r3, #48]
+ 225 0056 42F00202 		orr	r2, r2, #2
+ 226 005a 1A63     		str	r2, [r3, #48]
+ 227 005c 1B6B     		ldr	r3, [r3, #48]
+ 228 005e 03F00203 		and	r3, r3, #2
+ 229 0062 0193     		str	r3, [sp, #4]
+ 230 0064 019B     		ldr	r3, [sp, #4]
+ 231 0066 0DE0     		b	.L27
+ 232              	.L25:
+ 233 0068 214B     		ldr	r3, .L32+20
+ 234 006a 8360     		str	r3, [r0, #8]
+ 235 006c 0023     		movs	r3, #0
+ 236 006e 0093     		str	r3, [sp]
+ 237 0070 1D4B     		ldr	r3, .L32+12
+ 238 0072 1A6B     		ldr	r2, [r3, #48]
+ 239 0074 42F00102 		orr	r2, r2, #1
+ 240 0078 1A63     		str	r2, [r3, #48]
+ 241 007a 1B6B     		ldr	r3, [r3, #48]
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 5
+
+
+ 242 007c 03F00103 		and	r3, r3, #1
+ 243 0080 0093     		str	r3, [sp]
+ 244 0082 009B     		ldr	r3, [sp]
+ 245              	.L27:
+ 246 0084 0023     		movs	r3, #0
+ 247 0086 0593     		str	r3, [sp, #20]
+ 248 0088 174B     		ldr	r3, .L32+12
+ 249 008a 1A6B     		ldr	r2, [r3, #48]
+ 250 008c 42F08002 		orr	r2, r2, #128
+ 251 0090 1A63     		str	r2, [r3, #48]
+ 252 0092 1B6B     		ldr	r3, [r3, #48]
+ 253 0094 03F08003 		and	r3, r3, #128
+ 254 0098 0593     		str	r3, [sp, #20]
+ 255 009a 059B     		ldr	r3, [sp, #20]
+ 256 009c 06B0     		add	sp, sp, #24
+ 257              		@ sp needed
+ 258 009e 7047     		bx	lr
+ 259              	.L23:
+ 260 00a0 0E4B     		ldr	r3, .L32
+ 261 00a2 8360     		str	r3, [r0, #8]
+ 262 00a4 0023     		movs	r3, #0
+ 263 00a6 0293     		str	r3, [sp, #8]
+ 264 00a8 0F4B     		ldr	r3, .L32+12
+ 265 00aa 1A6B     		ldr	r2, [r3, #48]
+ 266 00ac 42F00402 		orr	r2, r2, #4
+ 267 00b0 1A63     		str	r2, [r3, #48]
+ 268 00b2 1B6B     		ldr	r3, [r3, #48]
+ 269 00b4 03F00403 		and	r3, r3, #4
+ 270 00b8 0293     		str	r3, [sp, #8]
+ 271 00ba 029B     		ldr	r3, [sp, #8]
+ 272 00bc E2E7     		b	.L27
+ 273              	.L28:
+ 274 00be 084B     		ldr	r3, .L32+4
+ 275 00c0 8360     		str	r3, [r0, #8]
+ 276 00c2 0023     		movs	r3, #0
+ 277 00c4 0393     		str	r3, [sp, #12]
+ 278 00c6 084B     		ldr	r3, .L32+12
+ 279 00c8 1A6B     		ldr	r2, [r3, #48]
+ 280 00ca 42F00802 		orr	r2, r2, #8
+ 281 00ce 1A63     		str	r2, [r3, #48]
+ 282 00d0 1B6B     		ldr	r3, [r3, #48]
+ 283 00d2 03F00803 		and	r3, r3, #8
+ 284 00d6 0393     		str	r3, [sp, #12]
+ 285 00d8 039B     		ldr	r3, [sp, #12]
+ 286 00da D3E7     		b	.L27
+ 287              	.L33:
+ 288              		.align	2
+ 289              	.L32:
+ 290 00dc 00080240 		.word	1073874944
+ 291 00e0 000C0240 		.word	1073875968
+ 292 00e4 00100240 		.word	1073876992
+ 293 00e8 00380240 		.word	1073887232
+ 294 00ec 00040240 		.word	1073873920
+ 295 00f0 00000240 		.word	1073872896
+ 296              		.cantunwind
+ 297              		.fnend
+ 299              		.global	_ZN9MyDrivers8GpioBaseC1ENS_8GpioPortENS_7GpioPinE
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 6
+
+
+ 300              		.thumb_set _ZN9MyDrivers8GpioBaseC1ENS_8GpioPortENS_7GpioPinE,_ZN9MyDrivers8GpioBaseC2ENS_8GpioPor
+ 301              		.align	1
+ 302              		.global	_ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE
+ 303              		.syntax unified
+ 304              		.thumb
+ 305              		.thumb_func
+ 307              	_ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE:
+ 308              		.fnstart
+ 309              	.LFB145:
+ 310              		@ args = 0, pretend = 0, frame = 0
+ 311              		@ frame_needed = 0, uses_anonymous_args = 0
+ 312 00f4 0029     		cmp	r1, #0
+ 313 00f6 57D0     		beq	.L40
+ 314 00f8 8C46     		mov	ip, r1
+ 315 00fa 002A     		cmp	r2, #0
+ 316 00fc 56D0     		beq	.L41
+ 317 00fe 0023     		movs	r3, #0
+ 318 0100 0F2B     		cmp	r3, #15
+ 319 0102 57D8     		bhi	.L50
+ 320 0104 10B5     		push	{r4, lr}
+ 321 0106 2FE0     		b	.L46
+ 322              	.L51:
+ 323 0108 DCF80800 		ldr	r0, [ip, #8]
+ 324 010c 5C00     		lsls	r4, r3, #1
+ 325 010e 4FF0030E 		mov	lr, #3
+ 326 0112 0EFA04FE 		lsl	lr, lr, r4
+ 327 0116 20EA0E0E 		bic	lr, r0, lr
+ 328 011a 9089     		ldrh	r0, [r2, #12]
+ 329 011c A040     		lsls	r0, r0, r4
+ 330 011e 40EA0E00 		orr	r0, r0, lr
+ 331 0122 CCF80800 		str	r0, [ip, #8]
+ 332 0126 DCF80400 		ldr	r0, [ip, #4]
+ 333 012a 20EA010E 		bic	lr, r0, r1
+ 334 012e 5068     		ldr	r0, [r2, #4]
+ 335 0130 C0F30011 		ubfx	r1, r0, #4, #1
+ 336 0134 9940     		lsls	r1, r1, r3
+ 337 0136 41EA0E01 		orr	r1, r1, lr
+ 338 013a CCF80410 		str	r1, [ip, #4]
+ 339 013e 1EE0     		b	.L37
+ 340              	.L38:
+ 341 0140 DCF80000 		ldr	r0, [ip]
+ 342 0144 4FEA430E 		lsl	lr, r3, #1
+ 343 0148 0321     		movs	r1, #3
+ 344 014a 01FA0EF1 		lsl	r1, r1, lr
+ 345 014e 20EA0100 		bic	r0, r0, r1
+ 346 0152 9188     		ldrh	r1, [r2, #4]
+ 347 0154 01F00301 		and	r1, r1, #3
+ 348 0158 01FA0EF1 		lsl	r1, r1, lr
+ 349 015c 0143     		orrs	r1, r1, r0
+ 350 015e CCF80010 		str	r1, [ip]
+ 351              	.L36:
+ 352 0162 0133     		adds	r3, r3, #1
+ 353 0164 0F2B     		cmp	r3, #15
+ 354 0166 23D8     		bhi	.L42
+ 355              	.L46:
+ 356 0168 0121     		movs	r1, #1
+ 357 016a 9940     		lsls	r1, r1, r3
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 7
+
+
+ 358 016c 1068     		ldr	r0, [r2]
+ 359 016e 31EA0000 		bics	r0, r1, r0
+ 360 0172 F6D1     		bne	.L36
+ 361 0174 9088     		ldrh	r0, [r2, #4]
+ 362 0176 00F00300 		and	r0, r0, #3
+ 363 017a 0128     		cmp	r0, #1
+ 364 017c C4D0     		beq	.L51
+ 365              	.L37:
+ 366 017e 9188     		ldrh	r1, [r2, #4]
+ 367 0180 01F00301 		and	r1, r1, #3
+ 368 0184 0329     		cmp	r1, #3
+ 369 0186 DBD0     		beq	.L38
+ 370 0188 DCF80C00 		ldr	r0, [ip, #12]
+ 371 018c 4FEA430E 		lsl	lr, r3, #1
+ 372 0190 0321     		movs	r1, #3
+ 373 0192 01FA0EF1 		lsl	r1, r1, lr
+ 374 0196 20EA0100 		bic	r0, r0, r1
+ 375 019a 1189     		ldrh	r1, [r2, #8]
+ 376 019c 01FA0EF1 		lsl	r1, r1, lr
+ 377 01a0 0143     		orrs	r1, r1, r0
+ 378 01a2 CCF80C10 		str	r1, [ip, #12]
+ 379 01a6 CBE7     		b	.L38
+ 380              	.L40:
+ 381 01a8 0020     		movs	r0, #0
+ 382 01aa 7047     		bx	lr
+ 383              	.L41:
+ 384 01ac 0020     		movs	r0, #0
+ 385 01ae 7047     		bx	lr
+ 386              	.L42:
+ 387 01b0 0120     		movs	r0, #1
+ 388 01b2 10BD     		pop	{r4, pc}
+ 389              	.L50:
+ 390 01b4 0120     		movs	r0, #1
+ 391 01b6 7047     		bx	lr
+ 392              		.cantunwind
+ 393              		.fnend
+ 395              		.align	1
+ 396              		.global	_ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE
+ 397              		.syntax unified
+ 398              		.thumb
+ 399              		.thumb_func
+ 401              	_ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE:
+ 402              		.fnstart
+ 403              	.LFB146:
+ 404              		@ args = 0, pretend = 0, frame = 0
+ 405              		@ frame_needed = 0, uses_anonymous_args = 0
+ 406              		@ link register save eliminated.
+ 407 01b8 41B1     		cbz	r1, .L55
+ 408 01ba 1BB1     		cbz	r3, .L54
+ 409 01bc 92B2     		uxth	r2, r2
+ 410 01be 8A61     		str	r2, [r1, #24]
+ 411 01c0 0120     		movs	r0, #1
+ 412 01c2 7047     		bx	lr
+ 413              	.L54:
+ 414 01c4 1204     		lsls	r2, r2, #16
+ 415 01c6 8A61     		str	r2, [r1, #24]
+ 416 01c8 0120     		movs	r0, #1
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 8
+
+
+ 417 01ca 7047     		bx	lr
+ 418              	.L55:
+ 419 01cc 0020     		movs	r0, #0
+ 420 01ce 7047     		bx	lr
+ 421              		.cantunwind
+ 422              		.fnend
+ 424              		.align	1
+ 425              		.global	_ZN9MyDrivers3Gpo6setBitENS_9GpioStateE
+ 426              		.syntax unified
+ 427              		.thumb
+ 428              		.thumb_func
+ 430              	_ZN9MyDrivers3Gpo6setBitENS_9GpioStateE:
+ 431              		.fnstart
+ 432              	.LFB157:
+ 433              		@ args = 0, pretend = 0, frame = 0
+ 434              		@ frame_needed = 0, uses_anonymous_args = 0
+ 435 01d0 08B5     		push	{r3, lr}
+ 436 01d2 0B1E     		subs	r3, r1, #0
+ 437 01d4 18BF     		it	ne
+ 438 01d6 0123     		movne	r3, #1
+ 439 01d8 4268     		ldr	r2, [r0, #4]
+ 440 01da C168     		ldr	r1, [r0, #12]
+ 441 01dc 0430     		adds	r0, r0, #4
+ 442 01de FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE
+ 443 01e2 08BD     		pop	{r3, pc}
+ 444              		.cantunwind
+ 445              		.fnend
+ 447              		.align	1
+ 448              		.global	_ZN9MyDrivers8GpioBase4readEP12GPIO_TypeDefNS_7GpioPinE
+ 449              		.syntax unified
+ 450              		.thumb
+ 451              		.thumb_func
+ 453              	_ZN9MyDrivers8GpioBase4readEP12GPIO_TypeDefNS_7GpioPinE:
+ 454              		.fnstart
+ 455              	.LFB147:
+ 456              		@ args = 0, pretend = 0, frame = 0
+ 457              		@ frame_needed = 0, uses_anonymous_args = 0
+ 458              		@ link register save eliminated.
+ 459 01e4 0B69     		ldr	r3, [r1, #16]
+ 460 01e6 92B2     		uxth	r2, r2
+ 461 01e8 1342     		tst	r3, r2
+ 462 01ea 01D0     		beq	.L60
+ 463 01ec 0120     		movs	r0, #1
+ 464 01ee 7047     		bx	lr
+ 465              	.L60:
+ 466 01f0 0020     		movs	r0, #0
+ 467 01f2 7047     		bx	lr
+ 468              		.cantunwind
+ 469              		.fnend
+ 471              		.align	1
+ 472              		.global	_ZN9MyDrivers3Gpi6getBitEv
+ 473              		.syntax unified
+ 474              		.thumb
+ 475              		.thumb_func
+ 477              	_ZN9MyDrivers3Gpi6getBitEv:
+ 478              		.fnstart
+ 479              	.LFB152:
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 9
+
+
+ 480              		@ args = 0, pretend = 0, frame = 0
+ 481              		@ frame_needed = 0, uses_anonymous_args = 0
+ 482 01f4 08B5     		push	{r3, lr}
+ 483 01f6 4268     		ldr	r2, [r0, #4]
+ 484 01f8 C168     		ldr	r1, [r0, #12]
+ 485 01fa 0430     		adds	r0, r0, #4
+ 486 01fc FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase4readEP12GPIO_TypeDefNS_7GpioPinE
+ 487 0200 08BD     		pop	{r3, pc}
+ 488              		.cantunwind
+ 489              		.fnend
+ 491              		.align	1
+ 492              		.global	_ZN9MyDrivers8GpioBase6toggleEP12GPIO_TypeDefNS_7GpioPinE
+ 493              		.syntax unified
+ 494              		.thumb
+ 495              		.thumb_func
+ 497              	_ZN9MyDrivers8GpioBase6toggleEP12GPIO_TypeDefNS_7GpioPinE:
+ 498              		.fnstart
+ 499              	.LFB148:
+ 500              		@ args = 0, pretend = 0, frame = 0
+ 501              		@ frame_needed = 0, uses_anonymous_args = 0
+ 502              		@ link register save eliminated.
+ 503 0202 0B46     		mov	r3, r1
+ 504 0204 51B1     		cbz	r1, .L65
+ 505 0206 4969     		ldr	r1, [r1, #20]
+ 506 0208 92B2     		uxth	r2, r2
+ 507 020a 02EA0100 		and	r0, r2, r1
+ 508 020e 22EA0102 		bic	r2, r2, r1
+ 509 0212 42EA0042 		orr	r2, r2, r0, lsl #16
+ 510 0216 9A61     		str	r2, [r3, #24]
+ 511 0218 0120     		movs	r0, #1
+ 512 021a 7047     		bx	lr
+ 513              	.L65:
+ 514 021c 0020     		movs	r0, #0
+ 515 021e 7047     		bx	lr
+ 516              		.cantunwind
+ 517              		.fnend
+ 519              		.align	1
+ 520              		.global	_ZN9MyDrivers3GpiC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 521              		.syntax unified
+ 522              		.thumb
+ 523              		.thumb_func
+ 525              	_ZN9MyDrivers3GpiC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE:
+ 526              		.fnstart
+ 527              	.LFB150:
+ 528              		@ args = 0, pretend = 0, frame = 16
+ 529              		@ frame_needed = 0, uses_anonymous_args = 0
+ 530 0220 F0B5     		push	{r4, r5, r6, r7, lr}
+ 531 0222 85B0     		sub	sp, sp, #20
+ 532 0224 0446     		mov	r4, r0
+ 533 0226 1746     		mov	r7, r2
+ 534 0228 1E46     		mov	r6, r3
+ 535 022a 051D     		adds	r5, r0, #4
+ 536 022c 2846     		mov	r0, r5
+ 537 022e FFF7FEFF 		bl	_ZN9MyDrivers8GpioBaseC2ENS_8GpioPortENS_7GpioPinE
+ 538 0232 0B4B     		ldr	r3, .L68
+ 539 0234 2360     		str	r3, [r4]
+ 540 0236 0023     		movs	r3, #0
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 10
+
+
+ 541 0238 6268     		ldr	r2, [r4, #4]
+ 542 023a E168     		ldr	r1, [r4, #12]
+ 543 023c 2846     		mov	r0, r5
+ 544 023e FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE
+ 545 0242 0097     		str	r7, [sp]
+ 546 0244 0023     		movs	r3, #0
+ 547 0246 0193     		str	r3, [sp, #4]
+ 548 0248 0296     		str	r6, [sp, #8]
+ 549 024a 0123     		movs	r3, #1
+ 550 024c 0393     		str	r3, [sp, #12]
+ 551 024e 6A46     		mov	r2, sp
+ 552 0250 E168     		ldr	r1, [r4, #12]
+ 553 0252 2846     		mov	r0, r5
+ 554 0254 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE
+ 555 0258 2046     		mov	r0, r4
+ 556 025a 05B0     		add	sp, sp, #20
+ 557              		@ sp needed
+ 558 025c F0BD     		pop	{r4, r5, r6, r7, pc}
+ 559              	.L69:
+ 560 025e 00BF     		.align	2
+ 561              	.L68:
+ 562 0260 08000000 		.word	.LANCHOR0+8
+ 563              		.cantunwind
+ 564              		.fnend
+ 566              		.global	_ZN9MyDrivers3GpiC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 567              		.thumb_set _ZN9MyDrivers3GpiC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE,_ZN9MyDrivers3GpiC2ENS_8Gpio
+ 568              		.align	1
+ 569              		.global	_ZN9MyDrivers3GpirsERNS_9GpioStateE
+ 570              		.syntax unified
+ 571              		.thumb
+ 572              		.thumb_func
+ 574              	_ZN9MyDrivers3GpirsERNS_9GpioStateE:
+ 575              		.fnstart
+ 576              	.LFB153:
+ 577              		@ args = 0, pretend = 0, frame = 0
+ 578              		@ frame_needed = 0, uses_anonymous_args = 0
+ 579 0264 10B5     		push	{r4, lr}
+ 580              		.save {r4, lr}
+ 581 0266 0C46     		mov	r4, r1
+ 582 0268 0368     		ldr	r3, [r0]
+ 583 026a 9B68     		ldr	r3, [r3, #8]
+ 584 026c 9847     		blx	r3
+ 585 026e 2060     		str	r0, [r4]
+ 586 0270 10BD     		pop	{r4, pc}
+ 587              		.fnend
+ 589              		.align	1
+ 590              		.global	_ZN9MyDrivers3GpoC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 591              		.syntax unified
+ 592              		.thumb
+ 593              		.thumb_func
+ 595              	_ZN9MyDrivers3GpoC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE:
+ 596              		.fnstart
+ 597              	.LFB155:
+ 598              		@ args = 0, pretend = 0, frame = 16
+ 599              		@ frame_needed = 0, uses_anonymous_args = 0
+ 600 0272 F0B5     		push	{r4, r5, r6, r7, lr}
+ 601 0274 85B0     		sub	sp, sp, #20
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 11
+
+
+ 602 0276 0446     		mov	r4, r0
+ 603 0278 1746     		mov	r7, r2
+ 604 027a 1E46     		mov	r6, r3
+ 605 027c 051D     		adds	r5, r0, #4
+ 606 027e 2846     		mov	r0, r5
+ 607 0280 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBaseC2ENS_8GpioPortENS_7GpioPinE
+ 608 0284 0A4B     		ldr	r3, .L74
+ 609 0286 2360     		str	r3, [r4]
+ 610 0288 0023     		movs	r3, #0
+ 611 028a 6268     		ldr	r2, [r4, #4]
+ 612 028c E168     		ldr	r1, [r4, #12]
+ 613 028e 2846     		mov	r0, r5
+ 614 0290 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE
+ 615 0294 0097     		str	r7, [sp]
+ 616 0296 0123     		movs	r3, #1
+ 617 0298 0193     		str	r3, [sp, #4]
+ 618 029a 0296     		str	r6, [sp, #8]
+ 619 029c 0393     		str	r3, [sp, #12]
+ 620 029e 6A46     		mov	r2, sp
+ 621 02a0 E168     		ldr	r1, [r4, #12]
+ 622 02a2 2846     		mov	r0, r5
+ 623 02a4 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE
+ 624 02a8 2046     		mov	r0, r4
+ 625 02aa 05B0     		add	sp, sp, #20
+ 626              		@ sp needed
+ 627 02ac F0BD     		pop	{r4, r5, r6, r7, pc}
+ 628              	.L75:
+ 629 02ae 00BF     		.align	2
+ 630              	.L74:
+ 631 02b0 1C000000 		.word	.LANCHOR0+28
+ 632              		.cantunwind
+ 633              		.fnend
+ 635              		.global	_ZN9MyDrivers3GpoC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 636              		.thumb_set _ZN9MyDrivers3GpoC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE,_ZN9MyDrivers3GpoC2ENS_8Gpio
+ 637              		.align	1
+ 638              		.global	_ZN9MyDrivers3Gpo9toggleBitEv
+ 639              		.syntax unified
+ 640              		.thumb
+ 641              		.thumb_func
+ 643              	_ZN9MyDrivers3Gpo9toggleBitEv:
+ 644              		.fnstart
+ 645              	.LFB158:
+ 646              		@ args = 0, pretend = 0, frame = 0
+ 647              		@ frame_needed = 0, uses_anonymous_args = 0
+ 648 02b4 08B5     		push	{r3, lr}
+ 649 02b6 4268     		ldr	r2, [r0, #4]
+ 650 02b8 C168     		ldr	r1, [r0, #12]
+ 651 02ba 0430     		adds	r0, r0, #4
+ 652 02bc FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase6toggleEP12GPIO_TypeDefNS_7GpioPinE
+ 653 02c0 08BD     		pop	{r3, pc}
+ 654              		.cantunwind
+ 655              		.fnend
+ 657              		.align	1
+ 658              		.global	_ZN9MyDrivers3GpolsENS_9GpioStateE
+ 659              		.syntax unified
+ 660              		.thumb
+ 661              		.thumb_func
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 12
+
+
+ 663              	_ZN9MyDrivers3GpolsENS_9GpioStateE:
+ 664              		.fnstart
+ 665              	.LFB159:
+ 666              		@ args = 0, pretend = 0, frame = 0
+ 667              		@ frame_needed = 0, uses_anonymous_args = 0
+ 668 02c2 08B5     		push	{r3, lr}
+ 669              		.save {r3, lr}
+ 670 02c4 0368     		ldr	r3, [r0]
+ 671 02c6 9B68     		ldr	r3, [r3, #8]
+ 672 02c8 9847     		blx	r3
+ 673 02ca 08BD     		pop	{r3, pc}
+ 674              		.fnend
+ 676              		.align	1
+ 677              		.global	_ZN9MyDrivers4Gpio12setTypePinInEv
+ 678              		.syntax unified
+ 679              		.thumb
+ 680              		.thumb_func
+ 682              	_ZN9MyDrivers4Gpio12setTypePinInEv:
+ 683              		.fnstart
+ 684              	.LFB167:
+ 685              		@ args = 0, pretend = 0, frame = 16
+ 686              		@ frame_needed = 0, uses_anonymous_args = 0
+ 687 02cc 30B5     		push	{r4, r5, lr}
+ 688 02ce 85B0     		sub	sp, sp, #20
+ 689 02d0 0446     		mov	r4, r0
+ 690 02d2 4368     		ldr	r3, [r0, #4]
+ 691 02d4 0093     		str	r3, [sp]
+ 692 02d6 0125     		movs	r5, #1
+ 693 02d8 0195     		str	r5, [sp, #4]
+ 694 02da 4369     		ldr	r3, [r0, #20]
+ 695 02dc 0293     		str	r3, [sp, #8]
+ 696 02de 0395     		str	r5, [sp, #12]
+ 697 02e0 6A46     		mov	r2, sp
+ 698 02e2 C168     		ldr	r1, [r0, #12]
+ 699 02e4 0430     		adds	r0, r0, #4
+ 700 02e6 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE
+ 701 02ea 2574     		strb	r5, [r4, #16]
+ 702 02ec 05B0     		add	sp, sp, #20
+ 703              		@ sp needed
+ 704 02ee 30BD     		pop	{r4, r5, pc}
+ 705              		.cantunwind
+ 706              		.fnend
+ 708              		.align	1
+ 709              		.global	_ZN9MyDrivers4GpioC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 710              		.syntax unified
+ 711              		.thumb
+ 712              		.thumb_func
+ 714              	_ZN9MyDrivers4GpioC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE:
+ 715              		.fnstart
+ 716              	.LFB161:
+ 717              		@ args = 0, pretend = 0, frame = 0
+ 718              		@ frame_needed = 0, uses_anonymous_args = 0
+ 719 02f0 38B5     		push	{r3, r4, r5, lr}
+ 720 02f2 0446     		mov	r4, r0
+ 721 02f4 1D46     		mov	r5, r3
+ 722 02f6 0430     		adds	r0, r0, #4
+ 723 02f8 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBaseC2ENS_8GpioPortENS_7GpioPinE
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 13
+
+
+ 724 02fc 044B     		ldr	r3, .L84
+ 725 02fe 2360     		str	r3, [r4]
+ 726 0300 0123     		movs	r3, #1
+ 727 0302 2374     		strb	r3, [r4, #16]
+ 728 0304 6561     		str	r5, [r4, #20]
+ 729 0306 2046     		mov	r0, r4
+ 730 0308 FFF7FEFF 		bl	_ZN9MyDrivers4Gpio12setTypePinInEv
+ 731 030c 2046     		mov	r0, r4
+ 732 030e 38BD     		pop	{r3, r4, r5, pc}
+ 733              	.L85:
+ 734              		.align	2
+ 735              	.L84:
+ 736 0310 08000000 		.word	_ZTVN9MyDrivers4GpioE+8
+ 737              		.cantunwind
+ 738              		.fnend
+ 740              		.global	_ZN9MyDrivers4GpioC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+ 741              		.thumb_set _ZN9MyDrivers4GpioC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE,_ZN9MyDrivers4GpioC2ENS_8Gp
+ 742              		.align	1
+ 743              		.global	_ZN9MyDrivers4Gpio6getBitEv
+ 744              		.syntax unified
+ 745              		.thumb
+ 746              		.thumb_func
+ 748              	_ZN9MyDrivers4Gpio6getBitEv:
+ 749              		.fnstart
+ 750              	.LFB164:
+ 751              		@ args = 0, pretend = 0, frame = 0
+ 752              		@ frame_needed = 0, uses_anonymous_args = 0
+ 753 0314 10B5     		push	{r4, lr}
+ 754 0316 0446     		mov	r4, r0
+ 755 0318 037C     		ldrb	r3, [r0, #16]	@ zero_extendqisi2
+ 756 031a 2BB1     		cbz	r3, .L89
+ 757              	.L87:
+ 758 031c 6268     		ldr	r2, [r4, #4]
+ 759 031e E168     		ldr	r1, [r4, #12]
+ 760 0320 201D     		adds	r0, r4, #4
+ 761 0322 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase4readEP12GPIO_TypeDefNS_7GpioPinE
+ 762 0326 10BD     		pop	{r4, pc}
+ 763              	.L89:
+ 764 0328 FFF7FEFF 		bl	_ZN9MyDrivers4Gpio12setTypePinInEv
+ 765 032c F6E7     		b	.L87
+ 766              		.cantunwind
+ 767              		.fnend
+ 769              		.align	1
+ 770              		.global	_ZN9MyDrivers4GpiorsERNS_9GpioStateE
+ 771              		.syntax unified
+ 772              		.thumb
+ 773              		.thumb_func
+ 775              	_ZN9MyDrivers4GpiorsERNS_9GpioStateE:
+ 776              		.fnstart
+ 777              	.LFB166:
+ 778              		@ args = 0, pretend = 0, frame = 0
+ 779              		@ frame_needed = 0, uses_anonymous_args = 0
+ 780 032e 10B5     		push	{r4, lr}
+ 781 0330 0C46     		mov	r4, r1
+ 782 0332 FFF7FEFF 		bl	_ZN9MyDrivers4Gpio6getBitEv
+ 783 0336 2060     		str	r0, [r4]
+ 784 0338 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 14
+
+
+ 785              		.cantunwind
+ 786              		.fnend
+ 788              		.align	1
+ 789              		.global	_ZN9MyDrivers4Gpio13setTypePinOutEv
+ 790              		.syntax unified
+ 791              		.thumb
+ 792              		.thumb_func
+ 794              	_ZN9MyDrivers4Gpio13setTypePinOutEv:
+ 795              		.fnstart
+ 796              	.LFB168:
+ 797              		@ args = 0, pretend = 0, frame = 16
+ 798              		@ frame_needed = 0, uses_anonymous_args = 0
+ 799 033a 10B5     		push	{r4, lr}
+ 800 033c 84B0     		sub	sp, sp, #16
+ 801 033e 0446     		mov	r4, r0
+ 802 0340 4368     		ldr	r3, [r0, #4]
+ 803 0342 0093     		str	r3, [sp]
+ 804 0344 0123     		movs	r3, #1
+ 805 0346 0193     		str	r3, [sp, #4]
+ 806 0348 4269     		ldr	r2, [r0, #20]
+ 807 034a 0292     		str	r2, [sp, #8]
+ 808 034c 0393     		str	r3, [sp, #12]
+ 809 034e 6A46     		mov	r2, sp
+ 810 0350 C168     		ldr	r1, [r0, #12]
+ 811 0352 0430     		adds	r0, r0, #4
+ 812 0354 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE
+ 813 0358 0023     		movs	r3, #0
+ 814 035a 2374     		strb	r3, [r4, #16]
+ 815 035c 04B0     		add	sp, sp, #16
+ 816              		@ sp needed
+ 817 035e 10BD     		pop	{r4, pc}
+ 818              		.cantunwind
+ 819              		.fnend
+ 821              		.align	1
+ 822              		.global	_ZN9MyDrivers4Gpio6setBitENS_9GpioStateE
+ 823              		.syntax unified
+ 824              		.thumb
+ 825              		.thumb_func
+ 827              	_ZN9MyDrivers4Gpio6setBitENS_9GpioStateE:
+ 828              		.fnstart
+ 829              	.LFB163:
+ 830              		@ args = 0, pretend = 0, frame = 0
+ 831              		@ frame_needed = 0, uses_anonymous_args = 0
+ 832 0360 38B5     		push	{r3, r4, r5, lr}
+ 833 0362 0446     		mov	r4, r0
+ 834 0364 0D46     		mov	r5, r1
+ 835 0366 037C     		ldrb	r3, [r0, #16]	@ zero_extendqisi2
+ 836 0368 43B9     		cbnz	r3, .L97
+ 837              	.L95:
+ 838 036a 2B1E     		subs	r3, r5, #0
+ 839 036c 18BF     		it	ne
+ 840 036e 0123     		movne	r3, #1
+ 841 0370 6268     		ldr	r2, [r4, #4]
+ 842 0372 E168     		ldr	r1, [r4, #12]
+ 843 0374 201D     		adds	r0, r4, #4
+ 844 0376 FFF7FEFF 		bl	_ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE
+ 845 037a 38BD     		pop	{r3, r4, r5, pc}
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 15
+
+
+ 846              	.L97:
+ 847 037c FFF7FEFF 		bl	_ZN9MyDrivers4Gpio13setTypePinOutEv
+ 848 0380 F3E7     		b	.L95
+ 849              		.cantunwind
+ 850              		.fnend
+ 852              		.align	1
+ 853              		.global	_ZN9MyDrivers4GpiolsENS_9GpioStateE
+ 854              		.syntax unified
+ 855              		.thumb
+ 856              		.thumb_func
+ 858              	_ZN9MyDrivers4GpiolsENS_9GpioStateE:
+ 859              		.fnstart
+ 860              	.LFB165:
+ 861              		@ args = 0, pretend = 0, frame = 0
+ 862              		@ frame_needed = 0, uses_anonymous_args = 0
+ 863 0382 08B5     		push	{r3, lr}
+ 864 0384 FFF7FEFF 		bl	_ZN9MyDrivers4Gpio6setBitENS_9GpioStateE
+ 865 0388 08BD     		pop	{r3, pc}
+ 866              		.cantunwind
+ 867              		.fnend
+ 869              		.weak	_ZTSN9MyDrivers8GpioBaseE
+ 870 038a 00BF     		.section	.rodata._ZTSN9MyDrivers8GpioBaseE,"aG",%progbits,_ZTSN9MyDrivers8GpioBaseE,comdat
+ 871              		.align	2
+ 874              	_ZTSN9MyDrivers8GpioBaseE:
+ 875 0000 4E394D79 		.ascii	"N9MyDrivers8GpioBaseE\000"
+ 875      44726976 
+ 875      65727338 
+ 875      4770696F 
+ 875      42617365 
+ 876              		.weak	_ZTIN9MyDrivers8GpioBaseE
+ 877              		.section	.rodata._ZTIN9MyDrivers8GpioBaseE,"aG",%progbits,_ZTIN9MyDrivers8GpioBaseE,comdat
+ 878              		.align	2
+ 881              	_ZTIN9MyDrivers8GpioBaseE:
+ 882 0000 08000000 		.word	_ZTVN10__cxxabiv117__class_type_infoE+8
+ 883 0004 00000000 		.word	_ZTSN9MyDrivers8GpioBaseE
+ 884              		.global	_ZTSN9MyDrivers3GpiE
+ 885              		.global	_ZTIN9MyDrivers3GpiE
+ 886              		.global	_ZTSN9MyDrivers3GpoE
+ 887              		.global	_ZTIN9MyDrivers3GpoE
+ 888              		.weak	_ZTSN9MyDrivers4GpioE
+ 889              		.section	.rodata._ZTSN9MyDrivers4GpioE,"aG",%progbits,_ZTSN9MyDrivers4GpioE,comdat
+ 890              		.align	2
+ 893              	_ZTSN9MyDrivers4GpioE:
+ 894 0000 4E394D79 		.ascii	"N9MyDrivers4GpioE\000"
+ 894      44726976 
+ 894      65727334 
+ 894      4770696F 
+ 894      4500
+ 895              		.weak	_ZTIN9MyDrivers4GpioE
+ 896              		.section	.rodata._ZTIN9MyDrivers4GpioE,"aG",%progbits,_ZTIN9MyDrivers4GpioE,comdat
+ 897              		.align	2
+ 900              	_ZTIN9MyDrivers4GpioE:
+ 901 0000 08000000 		.word	_ZTVN10__cxxabiv121__vmi_class_type_infoE+8
+ 902 0004 00000000 		.word	_ZTSN9MyDrivers4GpioE
+ 903 0008 00000000 		.word	0
+ 904 000c 01000000 		.word	1
+ 905 0010 00000000 		.word	_ZTIN9MyDrivers8GpioBaseE
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 16
+
+
+ 906 0014 02040000 		.word	1026
+ 907              		.global	_ZTVN9MyDrivers3GpiE
+ 908              		.global	_ZTVN9MyDrivers3GpoE
+ 909              		.weak	_ZTVN9MyDrivers4GpioE
+ 910              		.section	.rodata._ZTVN9MyDrivers4GpioE,"aG",%progbits,_ZTVN9MyDrivers4GpioE,comdat
+ 911              		.align	2
+ 914              	_ZTVN9MyDrivers4GpioE:
+ 915 0000 00000000 		.word	0
+ 916 0004 00000000 		.word	_ZTIN9MyDrivers4GpioE
+ 917 0008 00000000 		.word	_ZN9MyDrivers4GpioD1Ev
+ 918 000c 00000000 		.word	_ZN9MyDrivers4GpioD0Ev
+ 919              		.section	.rodata
+ 920              		.align	2
+ 921              		.set	.LANCHOR0,. + 0
+ 924              	_ZTVN9MyDrivers3GpiE:
+ 925 0000 00000000 		.word	0
+ 926 0004 00000000 		.word	_ZTIN9MyDrivers3GpiE
+ 927 0008 00000000 		.word	_ZN9MyDrivers3GpiD1Ev
+ 928 000c 00000000 		.word	_ZN9MyDrivers3GpiD0Ev
+ 929 0010 00000000 		.word	_ZN9MyDrivers3Gpi6getBitEv
+ 932              	_ZTVN9MyDrivers3GpoE:
+ 933 0014 00000000 		.word	0
+ 934 0018 00000000 		.word	_ZTIN9MyDrivers3GpoE
+ 935 001c 00000000 		.word	_ZN9MyDrivers3GpoD1Ev
+ 936 0020 00000000 		.word	_ZN9MyDrivers3GpoD0Ev
+ 937 0024 00000000 		.word	_ZN9MyDrivers3Gpo6setBitENS_9GpioStateE
+ 940              	_ZTSN9MyDrivers3GpiE:
+ 941 0028 4E394D79 		.ascii	"N9MyDrivers3GpiE\000"
+ 941      44726976 
+ 941      65727333 
+ 941      47706945 
+ 941      00
+ 942 0039 000000   		.space	3
+ 945              	_ZTIN9MyDrivers3GpiE:
+ 946 003c 08000000 		.word	_ZTVN10__cxxabiv121__vmi_class_type_infoE+8
+ 947 0040 00000000 		.word	_ZTSN9MyDrivers3GpiE
+ 948 0044 00000000 		.word	0
+ 949 0048 01000000 		.word	1
+ 950 004c 00000000 		.word	_ZTIN9MyDrivers8GpioBaseE
+ 951 0050 02040000 		.word	1026
+ 954              	_ZTSN9MyDrivers3GpoE:
+ 955 0054 4E394D79 		.ascii	"N9MyDrivers3GpoE\000"
+ 955      44726976 
+ 955      65727333 
+ 955      47706F45 
+ 955      00
+ 956 0065 000000   		.space	3
+ 959              	_ZTIN9MyDrivers3GpoE:
+ 960 0068 08000000 		.word	_ZTVN10__cxxabiv121__vmi_class_type_infoE+8
+ 961 006c 00000000 		.word	_ZTSN9MyDrivers3GpoE
+ 962 0070 00000000 		.word	0
+ 963 0074 01000000 		.word	1
+ 964 0078 00000000 		.word	_ZTIN9MyDrivers8GpioBaseE
+ 965 007c 02040000 		.word	1026
+ 966              		.ident	"GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 17
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 MyGpio.cpp
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:18     .text._ZN9MyDrivers3GpiD2Ev:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:24     .text._ZN9MyDrivers3GpiD2Ev:00000000 _ZN9MyDrivers3GpiD2Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:36     .text._ZN9MyDrivers3GpiD2Ev:00000008 $d
+.ARM.exidx.text._ZN9MyDrivers3GpiD2Ev:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:24     .text._ZN9MyDrivers3GpiD2Ev:00000000 _ZN9MyDrivers3GpiD1Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:43     .text._ZN9MyDrivers3GpoD2Ev:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:49     .text._ZN9MyDrivers3GpoD2Ev:00000000 _ZN9MyDrivers3GpoD2Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:61     .text._ZN9MyDrivers3GpoD2Ev:00000008 $d
+.ARM.exidx.text._ZN9MyDrivers3GpoD2Ev:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:49     .text._ZN9MyDrivers3GpoD2Ev:00000000 _ZN9MyDrivers3GpoD1Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:68     .text._ZN9MyDrivers4GpioD2Ev:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:74     .text._ZN9MyDrivers4GpioD2Ev:00000000 _ZN9MyDrivers4GpioD2Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:86     .text._ZN9MyDrivers4GpioD2Ev:00000008 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:914    .rodata._ZTVN9MyDrivers4GpioE:00000000 _ZTVN9MyDrivers4GpioE
+.ARM.exidx.text._ZN9MyDrivers4GpioD2Ev:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:74     .text._ZN9MyDrivers4GpioD2Ev:00000000 _ZN9MyDrivers4GpioD1Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:93     .text._ZN9MyDrivers4GpioD0Ev:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:99     .text._ZN9MyDrivers4GpioD0Ev:00000000 _ZN9MyDrivers4GpioD0Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:115    .text._ZN9MyDrivers4GpioD0Ev:00000014 $d
+.ARM.exidx.text._ZN9MyDrivers4GpioD0Ev:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:120    .text._ZN9MyDrivers3GpoD0Ev:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:126    .text._ZN9MyDrivers3GpoD0Ev:00000000 _ZN9MyDrivers3GpoD0Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:142    .text._ZN9MyDrivers3GpoD0Ev:00000014 $d
+.ARM.exidx.text._ZN9MyDrivers3GpoD0Ev:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:147    .text._ZN9MyDrivers3GpiD0Ev:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:153    .text._ZN9MyDrivers3GpiD0Ev:00000000 _ZN9MyDrivers3GpiD0Ev
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:169    .text._ZN9MyDrivers3GpiD0Ev:00000014 $d
+.ARM.exidx.text._ZN9MyDrivers3GpiD0Ev:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:174    .text:00000000 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:180    .text:00000000 _ZN9MyDrivers8GpioBaseC2ENS_8GpioPortENS_7GpioPinE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:290    .text:000000dc $d
+                       .ARM.exidx:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:180    .text:00000000 _ZN9MyDrivers8GpioBaseC1ENS_8GpioPortENS_7GpioPinE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:301    .text:000000f4 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:307    .text:000000f4 _ZN9MyDrivers8GpioBase4initEP12GPIO_TypeDefPNS_10GpioInit_tE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:401    .text:000001b8 _ZN9MyDrivers8GpioBase5writeEP12GPIO_TypeDefNS_7GpioPinENS_9GpioStateE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:430    .text:000001d0 _ZN9MyDrivers3Gpo6setBitENS_9GpioStateE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:453    .text:000001e4 _ZN9MyDrivers8GpioBase4readEP12GPIO_TypeDefNS_7GpioPinE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:477    .text:000001f4 _ZN9MyDrivers3Gpi6getBitEv
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:497    .text:00000202 _ZN9MyDrivers8GpioBase6toggleEP12GPIO_TypeDefNS_7GpioPinE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:525    .text:00000220 _ZN9MyDrivers3GpiC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:562    .text:00000260 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:525    .text:00000220 _ZN9MyDrivers3GpiC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:568    .text:00000264 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:574    .text:00000264 _ZN9MyDrivers3GpirsERNS_9GpioStateE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:595    .text:00000272 _ZN9MyDrivers3GpoC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:631    .text:000002b0 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:595    .text:00000272 _ZN9MyDrivers3GpoC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:637    .text:000002b4 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:643    .text:000002b4 _ZN9MyDrivers3Gpo9toggleBitEv
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:663    .text:000002c2 _ZN9MyDrivers3GpolsENS_9GpioStateE
+                       .ARM.extab:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:682    .text:000002cc _ZN9MyDrivers4Gpio12setTypePinInEv
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:714    .text:000002f0 _ZN9MyDrivers4GpioC2ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:736    .text:00000310 $d
+ARM GAS  C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s 			page 18
+
+
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:714    .text:000002f0 _ZN9MyDrivers4GpioC1ENS_8GpioPortENS_7GpioPinENS_8GpioPullE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:742    .text:00000314 $t
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:748    .text:00000314 _ZN9MyDrivers4Gpio6getBitEv
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:775    .text:0000032e _ZN9MyDrivers4GpiorsERNS_9GpioStateE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:794    .text:0000033a _ZN9MyDrivers4Gpio13setTypePinOutEv
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:827    .text:00000360 _ZN9MyDrivers4Gpio6setBitENS_9GpioStateE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:858    .text:00000382 _ZN9MyDrivers4GpiolsENS_9GpioStateE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:874    .rodata._ZTSN9MyDrivers8GpioBaseE:00000000 _ZTSN9MyDrivers8GpioBaseE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:871    .rodata._ZTSN9MyDrivers8GpioBaseE:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:881    .rodata._ZTIN9MyDrivers8GpioBaseE:00000000 _ZTIN9MyDrivers8GpioBaseE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:878    .rodata._ZTIN9MyDrivers8GpioBaseE:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:940    .rodata:00000028 _ZTSN9MyDrivers3GpiE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:945    .rodata:0000003c _ZTIN9MyDrivers3GpiE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:954    .rodata:00000054 _ZTSN9MyDrivers3GpoE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:959    .rodata:00000068 _ZTIN9MyDrivers3GpoE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:893    .rodata._ZTSN9MyDrivers4GpioE:00000000 _ZTSN9MyDrivers4GpioE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:890    .rodata._ZTSN9MyDrivers4GpioE:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:900    .rodata._ZTIN9MyDrivers4GpioE:00000000 _ZTIN9MyDrivers4GpioE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:897    .rodata._ZTIN9MyDrivers4GpioE:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:924    .rodata:00000000 _ZTVN9MyDrivers3GpiE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:932    .rodata:00000014 _ZTVN9MyDrivers3GpoE
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:911    .rodata._ZTVN9MyDrivers4GpioE:00000000 $d
+C:\Users\parad\AppData\Local\Temp\ccTWO1MF.s:920    .rodata:00000000 $d
+                           .group:00000000 _ZN9MyDrivers3GpiD5Ev
+                           .group:00000000 _ZN9MyDrivers3GpoD5Ev
+                           .group:00000000 _ZN9MyDrivers4GpioD5Ev
+
+UNDEFINED SYMBOLS
+_ZdlPvj
+__aeabi_unwind_cpp_pr0
+__aeabi_unwind_cpp_pr1
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZTVN10__cxxabiv121__vmi_class_type_infoE
